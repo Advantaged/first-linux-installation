@@ -6,6 +6,7 @@ Comprehensive simple instructions for your first Linux-installation.
 
 1. More & more people switch or want switch to Linux, the reasons why people wish this, will not be explained 
 here, & i'm sure, if you search & found this page… you have already "found" your own motivation 😉.
+
 2. My own motivation for doing these instructions… someone ask me & i cannot refuse/reject this request for a simple & 
 important reason… 'the only & true meaning/sense of live': "Collecting knowledge & termless transfer to everybody".
 
@@ -13,12 +14,16 @@ important reason… 'the only & true meaning/sense of live': "Collecting knowled
 
 * **Definitions**: we still have three kinds of Motherboards (MB), the very old BIOS, CMS & UEFI. CMS is a middle way 
 between BIOS & UEFI & mean BIOS & UEFI Compatibility Support Module.
+
 * Following points are (mostly) particularly dedicated to people "still using" **WinDoof** (shortcut WD), but, also 
 important for Linux-Newbie.
+
 * People that have already installed once Linux, this people can jump directly to **"§ 4. ot 5."**.
 
 1. **Disable "Fast Start"** in WD System-settings, read/see correlated [How-to](Fast-Start_Function-on-WinDoof.md).
+
 2. **Enable CMS** if present, read/see correlated [How-to](Find-CMS-in-BIOS.md).
+
 3. **Disable "Secure-Boot"**, for this see/read correlated [How-to](Secure-Boot-in-BIOS-or-UEFI.md), read 
 carefully dedicate note-s in last chapter of linked file/instructions.
 
@@ -35,7 +40,9 @@ DC-connection is available on your hardware (HW). Whitelist for recommended DC-s
 
 1. Best shrinking of WD-partitions through WD-own 'on-board-tools', read/see correlated 
 [How-to](Shrink-WD-partition.md).
+
 2. Alternatively you can user [GParted-Live](https://gparted.org/livecd.php) USB or similar tools based on Linux.
+
 3. **Notes:**
 	* Please let enough place on WD-main-partition for further use of the same.
 	* WD must be restarted, no matter which tool you have used, that permits the changes to take effect and/or WD to 
@@ -55,21 +62,26 @@ right-side, scroll ca. in the middle,you find it under menu "Page Hit Ranking" f
 
 1. If your hardware (HW) is not brand new but have already some years (3-4 or more) of work behind him, choose a 
 **Regular (Point) Release Distros** like Kubuntu, Neon, Mint, Debian or any other popular Debian-Derivate.
+
 2. If your HW is newer, i would choose a **Rolling Release Distros** & precisely (for me) the best OS worldwide 
 names [CachyOS](https://wiki.cachyos.org/cachyos_basic/download/). Other distros like EndeavourOS, Garuda, Manjaro, 
 etc. are also popular but… if you have high requirement to one OS or you are a gamer, you have at moment almost no 
 other choice.
+
 3. Choice of DE (Desktop-Environment). The DE is the appearances of an OS or precisely how/where the menus are 
 displayed, where you find minimize, maximize, close & other buttons, how precisely you can change/modify the 
 appearances, how detailed & deeply you can make your own settings, etc., etc..
-	* **Plasma**-DE also called KDE, use "Qt", vector-graphic. The placement of menus & buttons is like under WD but 
+
+3.1. **Plasma**-DE also called KDE, use "Qt", vector-graphic. The placement of menus & buttons is like under WD but 
 very detailed, use many resources, can be modified in a very simple manner, the best `systemsettings` & appearances, 
 not recommended for low-resources HW.
-	* **Gnome**, use "Gtk", no vectorized pictures & graphics mainly. The placement of menus & buttons is like under an 
-Apple desktop-OS, no so much adjustments/transformations-possibilities as Plasma but meanwhile also resources-hungry 
-like Plasma, not recommended for low-resources HW.
-	* **Lightweight**-DEs: If you HW is not so powerful, i recommend to use **LXQt** (Qt) or **XFCE** (Gtk) as DE. Many 
-Distros offer plenty of DEs. If you are new to Linux, don't choose/use a 'Compositor'-DE that need a lot of manual 
+
+3.2. **Gnome**, use "Gtk", no vectorized pictures & graphics mainly. The placement of menus & buttons is like 
+under an Apple desktop-OS, no so much adjustments/transformations-possibilities as Plasma but meanwhile also 
+resources-hungry like Plasma, not recommended for low-resources HW.
+
+3.3. **Lightweight**-DEs: If you HW is not so powerful, i recommend to use **LXQt** (Qt) or **XFCE** (Gtk) as DE. 
+Many Distros offer plenty of DEs. If you are new to Linux, don't choose/use a 'Compositor'-DE that need a lot of manual 
 adjustments in the CLI & configurations-files. The compositors practically offer you to build your own DE at your 
 pleasure/wish. An incomplete list of DE can be found in linked [Linux-DE.md](Linux-DE.md)
 
@@ -96,18 +108,28 @@ write there data of deteriorate cluster, in addition, this method let exchange D
 another DC-manufacturer. 
 
 1. Booth from Linux-Live-USB that have a DE like CachyOS, Mint, Garuda or whatever you like.
+
 2. Assure that on your live-system following program are installed: `nvme-cli`, `gptfdisk` & `multipath-tools`. Further 
 detailed explanation can be found [Here](https://github.com/Advantaged/4Kn-Formatting).
+
 3. Detect DC-name through/with commands `lsblk`.
+
 4. Convert, if it is possible your DC to "4Kn" LBA/LBS, this mean using clusters of 4-Kib (4096 byte) instead of very 
 old 512 byte. Detailed information, explanation & suggestion can be found 
 [Here](https://github.com/Advantaged/4Kn-Formatting), anyway…:
-	* 4.1. Detect the cluster dimension & if your DC  can be converted to "4Kn" trhough/with following command:
+
+4.1. Detect the cluster dimension & if your DC  can be converted to "4Kn" trhough/with following command:
+
 	`sudo nvme id-ns /dev/nvme0n1 -H | grep LBA`
-	* 4.2. If `Good` is in use & `Better` can be chooses, than format the controller to 4-KiB with following command:
+
+4.2. If `Good` is in use & `Better` can be chooses, than format the controller to 4-KiB with following command:
+
 	`sudo nvme format /dev/nvme0n1 -l 1`
-	* When the system commit the concluded "formatting", use command under pint "4.1." to countercheck the results.
+
+* When the system commit the concluded "formatting", use command under pint "4.1." to countercheck the results.
+
 5. Detect all particulars of your DC through/with command `fdisk -l /dev/nvme0n1`.
+
 6. Just on the first line you will find, the total amount of bytes, at this stage divide the total bytes by 3 time 
 1024, e.g. `2000398934016/1024/1024/1024 = 1863 GiB`. Plane now how to partition your DC, e.g. **"4 GiB for EFI"**, 
 **"1850 GiB for OS"** & let the remain space **empty**. Partitions-table-codes can be found 
@@ -127,9 +149,7 @@ manually in the "CLI" like [Here](https://github.com/Advantaged/4Kn-Formatting) 
 above to force `ext4` to accept "4Kn". More modern FS like `zfs` & `btrfs` use "4-KiB" by default 😉.
 
 
-✅ **Done**👍 **& Enjoy** 😉.
+✅ **Done** 👍 **& Enjoy** 😉.
 
 
 .
-
-..
