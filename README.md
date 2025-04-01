@@ -83,7 +83,7 @@ resources-hungry like Plasma, not recommended for low-resources HW.
 3.3. **Lightweight**-DEs: If your HW is not so powerful, i recommend to use **LXQt** (Qt) or **XFCE** (Gtk) as DE. 
 Many Distros offer plenty of DEs. If you are new to Linux, don't choose/use a 'Compositor'-DE that need a lot of manual 
 adjustments in the CLI & configurations-files. The compositors practically offer you to build your own DE at your 
-pleasure/wish. An incomplete list of DE can be found in linked [Linux-DE.md](Linux-DE.md)
+pleasure/wish. An incomplete list of DE can be found in linked [Linux-DE.md](Linux-DE.md).
 
 ### Step 4.: "Burn" a Linux-ISO on USB-stick
 
