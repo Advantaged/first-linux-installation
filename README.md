@@ -96,7 +96,7 @@ write there data of deteriorate cluster, in addition, this method let exchange D
 another DC-manufacturer. 
 
 1. Booth from Linux-Live-USB that have a DE like CachyOS, Mint, Garuda or whatever you like.
-2. Assure that on you live-system following program are installed: `nvme-cli`, `gptfdisk` & `multipath-tools`. Further 
+2. Assure that on your live-system following program are installed: `nvme-cli`, `gptfdisk` & `multipath-tools`. Further 
 detailed explanation can be found [Here](https://github.com/Advantaged/4Kn-Formatting).
 3. Detect DC-name through/with commands `lsblk`.
 4. Convert, if it is possible your DC to "4Kn" LBA/LBS, this mean using clusters of 4-Kib (4096 byte) instead of very 
