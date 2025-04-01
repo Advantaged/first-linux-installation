@@ -34,7 +34,7 @@ natural "situation" for a Linux-OS, besides… Linux don't ("yet") need it.
 recommend buying at least a refurbished mini computer like "Dell-Optiplex-7050-micro" or 7060 or equivalent.
 	* If possible, please, use/get an additional Data-Carrier (DC) like a SATA-SSD or (better a) NVMe-PCIe or what-else 
 DC-connection is available on your hardware (HW). Whitelist for recommended DC-s can be found 
-[here](https://github.com/Advantaged/4Kn-Formatting/Whitelist-NVMe-PCIe.md)
+[here](https://github.com/Advantaged/4Kn-Formatting/Whitelist-NVMe-PCIe.md).
 
 ### Step 2: Shrink (in case) your DC (Data-Carrier)
 
