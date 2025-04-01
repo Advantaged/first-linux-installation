@@ -66,7 +66,7 @@ appearances, how detailed & deeply you can make your own settings, etc., etc..
 very detailed, use many resources, can be modified in a very simple manner, the best `systemsettings` & appearances, 
 not recommended for low-resources HW.
 	* **Gnome**, use "Gtk", no vectorized pictures & graphics mainly. The placement of menus & buttons is like under an 
-Apple desktop-OS. no so much adjustments/transformations-possibilities as Plasma but meanwhile also resources-hungry 
+Apple desktop-OS, no so much adjustments/transformations-possibilities as Plasma but meanwhile also resources-hungry 
 like Plasma, not recommended for low-resources HW.
 	* **Lightweight**-DEs: If you HW is not so powerful, i recommend to use **LXQt** (Qt) or **XFCE** (Gtk) as DE. Many 
 Distros offer plenty of DEs. If you are new to Linux, don't choose/use a 'Compositor'-DE that need a lot of manual 
