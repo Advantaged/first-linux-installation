@@ -60,8 +60,8 @@ names [CachyOS](https://wiki.cachyos.org/cachyos_basic/download/). Other distros
 etc. are also popular but… if you have high requirement to one OS or you are a gamer, you have at moment almost no 
 other choice.
 3. Choice of DE (Desktop-Environment). The DE is the appearances of an OS or precisely how/where the menus are 
-displayed, where you find minimize, maximize, close & other buttons, how precisely you can change.modify the 
-appearances, how detailed & deep you can make your own settings, etc., etc..
+displayed, where you find minimize, maximize, close & other buttons, how precisely you can change/modify the 
+appearances, how detailed & deeply you can make your own settings, etc., etc..
 	* **Plasma**-DE also called KDE, use "Qt", vector-graphic. The placement of menus & buttons is like under WD but 
 very detailed, use many resources, can be modified in a very simple manner, the best `systemsettings` & appearances, 
 not recommended for low-resources HW.
